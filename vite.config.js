@@ -8,12 +8,5 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    // TAMBAHKAN BAGIAN INI
-    server: {
-        cors: true,             // Izinkan akses dari domain manapun (shopiyt.com)
-        host: '0.0.0.0',        // Izinkan server diakses dari luar localhost
-        hmr: {
-            host: 'localhost',  // Paksa HMR connect ke localhost (bukan [::1])
-        },
-    },
+    
 });
