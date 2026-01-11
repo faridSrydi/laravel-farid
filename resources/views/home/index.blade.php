@@ -5,88 +5,39 @@
 
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-6">
 
-        {{-- ================= HERO SLIDER (UNIQLO STYLE) ================= --}}
+        {{-- ================= HERO SLIDER (CLEAN IMAGE ONLY) ================= --}}
         <div class="swiper heroSwiper mb-12 group relative">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="relative aspect-[16/9] md:aspect-[21/9] bg-gray-200">
                         <img src="{{ asset('assets/images/slider/slider1.jpg') }}"
-                            class="w-full h-full object-cover" alt="Koleksi Pria">
-                        <div class="absolute inset-0 bg-black/10 flex items-center p-8 md:p-16">
-                            <div class="bg-white p-6 md:p-10 max-w-xs md:max-w-md">
-                                <p class="text-[10px] font-bold tracking-[0.3em] uppercase mb-2 text-red-600">Terbaru</p>
-                                <h2 class="text-2xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-4">
-                                    Koleksi Musim Panas 2024</h2>
-                                <p class="text-sm text-gray-600 mb-6 hidden md:block">Kenyamanan maksimal dengan teknologi
-                                    AirSense yang inovatif.</p>
-                                <a href="#"
-                                    class="inline-block bg-black text-white text-[11px] font-bold uppercase tracking-widest px-8 py-4 hover:bg-gray-800 transition">Lihat
-                                    Selengkapnya</a>
-                            </div>
-                        </div>
+                            class="w-full h-full object-cover" alt="Slider 1">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="relative aspect-[16/9] md:aspect-[21/9] bg-gray-200">
                         <img src="{{ asset('assets/images/slider/slider2.jpg') }}"
-                            class="w-full h-full object-cover" alt="Koleksi Wanita">
-                        <div class="absolute inset-0 bg-black/10 flex items-center justify-end p-8 md:p-16">
-                            <div class="bg-white p-6 md:p-10 max-w-xs md:max-w-md text-right">
-                                <p class="text-[10px] font-bold tracking-[0.3em] uppercase mb-2 text-red-600">Promosi</p>
-                                <h2 class="text-2xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-4">
-                                    E-Commerce Eksklusif</h2>
-                                <p class="text-sm text-gray-600 mb-6 hidden md:block">Dapatkan penawaran harga spesial hanya
-                                    untuk pembelian aplikasi.</p>
-                                <a href="#"
-                                    class="inline-block bg-black text-white text-[11px] font-bold uppercase tracking-widest px-8 py-4 hover:bg-gray-800 transition">Belanja
-                                    Sekarang</a>
-                            </div>
-                        </div>
+                            class="w-full h-full object-cover" alt="Slider 2">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="relative aspect-[16/9] md:aspect-[21/9] bg-gray-200">
                         <img src="{{ asset('assets/images/slider/slider3.jpg') }}"
-                            class="w-full h-full object-cover" alt="Koleksi Pria">
-                        <div class="absolute inset-0 bg-black/10 flex items-center p-8 md:p-16">
-                            <div class="bg-white p-6 md:p-10 max-w-xs md:max-w-md">
-                                <p class="text-[10px] font-bold tracking-[0.3em] uppercase mb-2 text-red-600">Terbaru</p>
-                                <h2 class="text-2xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-4">
-                                    Koleksi Musim Panas 2024</h2>
-                                <p class="text-sm text-gray-600 mb-6 hidden md:block">Kenyamanan maksimal dengan teknologi
-                                    AirSense yang inovatif.</p>
-                                <a href="#"
-                                    class="inline-block bg-black text-white text-[11px] font-bold uppercase tracking-widest px-8 py-4 hover:bg-gray-800 transition">Lihat
-                                    Selengkapnya</a>
-                            </div>
-                        </div>
+                            class="w-full h-full object-cover" alt="Slider 3">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="relative aspect-[16/9] md:aspect-[21/9] bg-gray-200">
                         <img src="{{ asset('assets/images/slider/slider4.jpg') }}"
-                            class="w-full h-full object-cover" alt="Koleksi Wanita">
-                        <div class="absolute inset-0 bg-black/10 flex items-center justify-end p-8 md:p-16">
-                            <div class="bg-white p-6 md:p-10 max-w-xs md:max-w-md text-right">
-                                <p class="text-[10px] font-bold tracking-[0.3em] uppercase mb-2 text-red-600">Promosi</p>
-                                <h2 class="text-2xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-4">
-                                    E-Commerce Eksklusif</h2>
-                                <p class="text-sm text-gray-600 mb-6 hidden md:block">Dapatkan penawaran harga spesial hanya
-                                    untuk pembelian aplikasi.</p>
-                                <a href="#"
-                                    class="inline-block bg-black text-white text-[11px] font-bold uppercase tracking-widest px-8 py-4 hover:bg-gray-800 transition">Belanja
-                                    Sekarang</a>
-                            </div>
-                        </div>
+                            class="w-full h-full object-cover" alt="Slider 4">
                     </div>
                 </div>                
             </div>
 
-            <div
-                class="swiper-button-next !text-black !w-12 !h-12 bg-white/80 opacity-0 group-hover:opacity-100 transition after:!text-lg">
+            {{-- Navigation Buttons --}}
+            <div class="swiper-button-next !text-black !w-12 !h-12 bg-white/80 opacity-0 group-hover:opacity-100 transition after:!text-lg">
             </div>
-            <div
-                class="swiper-button-prev !text-black !w-12 !h-12 bg-white/80 opacity-0 group-hover:opacity-100 transition after:!text-lg">
+            <div class="swiper-button-prev !text-black !w-12 !h-12 bg-white/80 opacity-0 group-hover:opacity-100 transition after:!text-lg">
             </div>
 
             <div class="swiper-pagination !-bottom-2"></div>
@@ -122,7 +73,7 @@
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor font-bold">
+                            stroke="currentColor">
                             <path d="M19 9l-7 7-7-7" stroke-width="2" />
                         </svg>
                     </div>
@@ -221,7 +172,9 @@
         }
 
         .pagination nav {
-            @apply flex items-center gap-1;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
         }
     </style>
 @endsection
