@@ -57,11 +57,15 @@ Route::resource('addresses', AddressController::class);
 
 
 // User
-Route::middleware(['auth', 'role:user'])->group(function () {
-    Route::get('/user/dashboard', fn() => view('user.dashboard'));
-Route::resource('addresses', UserAddressController::class);
-});
-
+Route::middleware(['auth', 'role:user'])
+    ->prefix('user') // Agar URL menjadi /user/addresses
+    ->name('user.')   // Agar nama route menjadi user.addresses.index
+    ->group(function () {
+        
+        Route::get('/dashboard', fn() => view('user.dashboard'))->name('dashboard');
+        Route::resource('addresses', UserAddressController::class);
+        
+    });
 
 
 
